@@ -1,0 +1,55 @@
+<html>
+
+<style type="text/css">
+
+.menu {font-family:Arial; font-weight:bold}
+
+.menu a{
+text-decoration:none;
+
+}
+
+</style>
+
+<head>
+
+<script language="javascript">
+
+function movein(which,html)
+{
+which.style.background='#CCCCCC'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML=html
+else
+boxdescription.innerHTML=html
+}
+
+function moveout(which)
+{
+which.style.background=''
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML='&nbsp;'
+else
+boxdescription.innerHTML='&nbsp;'
+}
+
+</script>
+
+</head>
+
+<body background="Orange1.jpg">
+
+<table border="0" cellpadding="2" cellspacing="0">
+
+<tr>
+<td class="menu" id="choice1" style="cursor:hand" onmouseover="movein(this,'')" onmouseout="moveout(this)"">
+<a href="AddParticipant.jsp" TARGET="EMPLIBMAIN"> <font color="#660099" face="Trebuchet MS">Start Chat  </a></td></tr>
+
+<tr>
+<td height="18"><font id="boxdescription" face="Verdana" size="2" color="red"></font></td></tr>
+</table>
+
+
+</body>
+</html>
+
